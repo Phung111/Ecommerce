@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Ecommerce/static/css/main.2a99286f.css",
+    "main.js": "/Ecommerce/static/js/main.1f85a5b4.js",
+    "static/media/Futurism.otf": "/Ecommerce/static/media/Futurism.f541ffa7fe34e0b390cf.otf",
+    "index.html": "/Ecommerce/index.html",
+    "main.2a99286f.css.map": "/Ecommerce/static/css/main.2a99286f.css.map",
+    "main.1f85a5b4.js.map": "/Ecommerce/static/js/main.1f85a5b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a99286f.css",
+    "static/js/main.1f85a5b4.js"
+  ]
+}
