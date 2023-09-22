@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/Ecommerce/static/css/main.2a99286f.css",
-    "main.js": "/Ecommerce/static/js/main.1f85a5b4.js",
+    "main.css": "/Ecommerce/static/css/main.acd5392b.css",
+    "main.js": "/Ecommerce/static/js/main.3649dfb7.js",
+    "static/media/advertise.png": "/Ecommerce/static/media/advertise.6abb119a4495c761aa11.png",
+    "static/media/our_story.png": "/Ecommerce/static/media/our_story.5cf0c3ae4f0b37e3a31a.png",
+    "static/media/inter.ttf": "/Ecommerce/static/media/inter.3f7acfe50aad7ad68548.ttf",
+    "static/media/light-soy-sauce.png": "/Ecommerce/static/media/light-soy-sauce.094e70025dbd9ba72f60.png",
+    "static/media/hot_products.png": "/Ecommerce/static/media/hot_products.ff7b0cab8206dd36c23d.png",
     "static/media/Futurism.otf": "/Ecommerce/static/media/Futurism.f541ffa7fe34e0b390cf.otf",
+    "static/media/japan_soy.png": "/Ecommerce/static/media/japan_soy.5561d557f85831c4a56d.png",
+    "static/media/healthy_soy.png": "/Ecommerce/static/media/healthy_soy.1630d2c7134f3b802abc.png",
+    "static/media/kwangna.png": "/Ecommerce/static/media/kwangna.fc290a4e6e73c971bcc3.png",
+    "static/media/top1png.png": "/Ecommerce/static/media/top1png.41767bd1f0392a6003a7.png",
+    "static/media/factory.svg": "/Ecommerce/static/media/factory.0fd8a5e85f177361c446a61d7860102b.svg",
+    "static/media/group_people.svg": "/Ecommerce/static/media/group_people.8810dc35b448d0e222cec9c8eb693be0.svg",
     "index.html": "/Ecommerce/index.html",
-    "main.2a99286f.css.map": "/Ecommerce/static/css/main.2a99286f.css.map",
-    "main.1f85a5b4.js.map": "/Ecommerce/static/js/main.1f85a5b4.js.map"
+    "main.acd5392b.css.map": "/Ecommerce/static/css/main.acd5392b.css.map",
+    "main.3649dfb7.js.map": "/Ecommerce/static/js/main.3649dfb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a99286f.css",
-    "static/js/main.1f85a5b4.js"
+    "static/css/main.acd5392b.css",
+    "static/js/main.3649dfb7.js"
   ]
 }
