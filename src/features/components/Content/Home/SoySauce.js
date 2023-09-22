@@ -14,7 +14,7 @@ export default function SoySauce() {
                 <h2>Soy Sauce</h2>
               </div>
               <div className="flex gap-5">
-                <div className="w-[380px] shrink-0">
+                <div className="w-[40%] shrink-0">
                   <ProductType1
                     img={lightSoySauce}
                     title={"Light Soy Sauce Meaning Soy Sauce Without Caramel"}

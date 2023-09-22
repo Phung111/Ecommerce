@@ -13,7 +13,11 @@ export default function ProductType1({
         <div className="flex flex-col gap-7 ">
           <div className="relative">
             <div className="absolute h-full w-full cursor-pointer hover:bg-black/20"></div>
-            <img src={img} alt="lightSoySauce" className="aspect-square" />
+            <img
+              src={img}
+              alt="lightSoySauce"
+              className="aspect-square w-full"
+            />
             <img
               src={playButton}
               alt="playButton"
