@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import baseDataReducer from "../features/baseData/BaseData";
+import baseDataReducer from "features/baseData/BaseData";
 
 const store = configureStore({
   reducer: {

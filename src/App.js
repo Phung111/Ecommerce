@@ -1,10 +1,13 @@
-import Toast from "./utils/Toast";
-import Home from "./features/Home";
+import InitAllData from "features/baseData/InitAllData";
+import Utils from "utils/Utils";
+import Index from "features/Index";
 
 export default function App() {
   return (
     <>
-      <Home />
+      <InitAllData />
+      <Utils />
+      <Index />
     </>
   );
 }
