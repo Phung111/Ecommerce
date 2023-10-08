@@ -4,7 +4,9 @@ const namespace = "baseData";
 
 const initialState = {
   data: {
-    webs: [],
+    homes: [true, false, false],
+    tabs: [true, false, false, false],
+    messages: [true, false, false],
   },
 };
 
@@ -12,13 +14,31 @@ const baseData = createSlice({
   name: namespace,
   initialState,
   reducers: {
-    setWebs: (state, action) => {
-      state.data.webs = action.payload;
-    }
+    setHomes: (state, action) => {
+      const index = action.payload;
+      for (let i = 0; i < state.data.homes.length; i++) {
+        state.data.homes[i] = true
+          ? i === index
+          : (state.data.homes[i] = false);
+      }
+    },
+    setTabs: (state, action) => {
+      const index = action.payload;
+      for (let i = 0; i < state.data.tabs.length; i++) {
+        state.data.tabs[i] = true ? i === index : (state.data.tabs[i] = false);
+      }
+    },
+    setMessages: (state, action) => {
+      const index = action.payload;
+      for (let i = 0; i < state.data.messages.length; i++) {
+        state.data.messages[i] = true
+          ? i === index
+          : (state.data.messages[i] = false);
+      }
+    },
   },
 });
 
 const { reducer, actions } = baseData;
-export const { setWebs } =
-  actions;
+export const { setMessages, setHomes, setTabs } = actions;
 export default reducer;

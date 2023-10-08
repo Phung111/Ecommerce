@@ -37,7 +37,7 @@
   }
 
   h2 {
-    @apply text-[17px] font-semibold capitalize;
+    @apply !text-[17px] !font-semibold capitalize;
   }
 
   h3 {
@@ -47,6 +47,10 @@
   p {
     @apply text-[15px];
   }
+
+  /* input {
+    @apply border focus:border-none
+  } */
 }
 
 @layer components {
@@ -56,4 +60,28 @@
   .container {
     @apply mx-2 w-full md:mx-auto md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl;
   }
+
+  .level__1:hover .level__1__drop {
+    @apply flex;
+  }
+
+  .level__2:hover .level__2__drop {
+    @apply flex;
+  }
+
+  .level__3:hover .level__3__drop {
+    @apply flex;
+  }
+
+  .level__4:hover .level__4__drop {
+    @apply flex;
+  }
+
+  /* [data-title] {
+    @apply relative;
+  }
+
+  [data-title]::before {
+    @apply invisible absolute left-3/4 top-3/4 whitespace-nowrap rounded border bg-white px-1 py-2 text-xs opacity-0 transition-opacity content-[attr(data-title)] hover:visible hover:opacity-100;
+  } */
 }

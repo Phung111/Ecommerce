@@ -1,5 +1,3 @@
-import { useSelector } from "react-redux";
-
 import Advertisement from "features/components/Content/Home/Advertisement";
 import SoySauce from "features/components/Content/Home/SoySauce";
 import HotProducts from "features/components/Content/Home/HotProducts";
@@ -8,8 +6,6 @@ import OurStory from "features/components/Content/Home/OurStory";
 import Supplier from "features/components/Footer/Supplier";
 
 export default function Home() {
-  const baseData = useSelector((state) => state.baseData.data);
-
   return (
     <>
       <Advertisement />
@@ -17,7 +13,9 @@ export default function Home() {
       <HotProducts />
       <OyserSauce />
       <OurStory />
-      <Supplier />
+      <div className="mx-auto max-w-[95%] py-6">
+        <Supplier />
+      </div>
     </>
   );
 }

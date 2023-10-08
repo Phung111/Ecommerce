@@ -1,4 +1,6 @@
 import playButton from "assets/images/play_button.png";
+import { useDispatch } from "react-redux";
+import { setHomes } from "features/baseData/BaseData";
 
 export default function ProductType1({
   img,
@@ -7,11 +9,15 @@ export default function ProductType1({
   quantity,
   isContact,
 }) {
+  const dispatch = useDispatch();
+  const handleSetHomes = (index) => {
+    dispatch(setHomes(index));
+  };
   return (
     <>
-      <div className="bg-white p-5">
+      <div className="overflow-hidden rounded-lg bg-white p-5">
         <div className="flex flex-col gap-7 ">
-          <div className="relative">
+          <div className="relative" onClick={() => handleSetHomes(1)}>
             <div className="absolute h-full w-full cursor-pointer hover:bg-black/20"></div>
             <img
               src={img}
@@ -25,7 +31,7 @@ export default function ProductType1({
             />
           </div>
           <div className="flex flex-col gap-6">
-            <p className="capitalize">{title}</p>
+            <p className="h-12 overflow-hidden capitalize">{title}</p>
             {(price || quantity) && (
               <div className="flex flex-col gap-3">
                 {price && (

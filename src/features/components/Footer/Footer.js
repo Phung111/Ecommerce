@@ -7,11 +7,11 @@ import tiktok from "assets/images/tiktok.png";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#e7e7e7]">
-        <div className="mx-auto max-w-[90%]">
-          <div className="flex flex-col">
-            <div className="flex flex-col justify-between gap-6 py-3 lg:flex-row">
-              <div className="flex justify-center gap-12">
+      <div className="bg-[#f2f2f2]">
+        <div className="mx-auto max-w-[95%]">
+          <div className="flex flex-col gap-6 py-6">
+            <div className="flex flex-col justify-between gap-6 lg:flex-row">
+              <div className="flex flex-wrap gap-12">
                 <div className="flex shrink-0 flex-col gap-6">
                   <p className="font-bold">About Us</p>
                   <p className="text-[13px]">About SuperVietNam.com</p>
@@ -21,7 +21,7 @@ export default function Footer() {
                   <p className="font-bold">Help</p>
                   <p className="text-[13px]">FAQ</p>
                   <p className="text-[13px]">Contact Us</p>
-                  <p className="text-[13px]">Submit a Complaint</p>
+                  <p className="text-[13px]">Submit button Complaint</p>
                 </div>
                 <div className="flex shrink-0 flex-col gap-6">
                   <p className="font-bold">Language Options</p>
@@ -57,70 +57,40 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <div className="flex flex-col items-center gap-3 py-3">
-              <div className="flex divide-x">
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-wrap justify-center divide-x">
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   Hot Prodcuts
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   VietNam Products
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   VietNam Manufactures/Suppliers
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   Wholesale Products
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   WholeSale Price
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   VietNam Factory
-                </a>
+                </button>
               </div>
-              <div className="flex divide-x">
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+              <div className="flex flex-wrap justify-center divide-x">
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   Copyright © VietNam Exporting Technology
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   User Agreement
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   Declaration
-                </a>
-                <a
-                  href="#"
-                  className="cursor-pointer px-2 text-center text-[#555] hover:text-blue"
-                >
+                </button>
+                <button className="cursor-pointer px-2 text-center text-[#555] hover:text-blue">
                   Privacy Policy
-                </a>
+                </button>
               </div>
             </div>
           </div>

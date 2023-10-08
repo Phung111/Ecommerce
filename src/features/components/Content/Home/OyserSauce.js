@@ -5,16 +5,16 @@ export default function OyserSauce() {
   return (
     <>
       <div className="bg-white">
-        <div className="container">
+        <div className="mx-auto max-w-[95%]">
           <div className="py-6">
             <div className="flex flex-col gap-6">
               <div className="flex justify-center">
                 <h2>Oyser Sauce and Rive Vinegar</h2>
               </div>
-              <div className="grid grid-cols-4">
+              <div className="grid grid-cols-3 lg:grid-cols-4">
                 {Array(8)
                   .fill()
-                  .map((index) => (
+                  .map((item, index) => (
                     <ProductType1
                       img={japanSoy}
                       title={
@@ -23,6 +23,7 @@ export default function OyserSauce() {
                       price={"US$0.39-0.499"}
                       quantity={1200}
                       isContact={false}
+                      key={index}
                     />
                   ))}
               </div>

@@ -5,7 +5,7 @@ export default function HotProducts() {
   return (
     <>
       <div className="flex">
-        <div className="container">
+        <div className="mx-auto max-w-[95%]">
           <div className="py-6">
             <div className="flex flex-col gap-6">
               <div className="flex justify-center">

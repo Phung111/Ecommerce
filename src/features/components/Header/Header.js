@@ -1,76 +1,36 @@
-import Menu from "./Menu/Menu";
 import ChatWithSupplier from "./Contact/ChatWithSupplier";
 import ContactNow from "./Contact/ContactNow";
 import Logo from "./Contact/Logo";
 import SignInJoin from "./Contact/SignInJoin";
-import { useEffect, useState } from "react";
+import ButtonMail from "features/components/Button/ButtonMail";
+import ButtonChat from "features/components/Button/ButtonChat";
 
 export default function Header() {
-  const [screen, setScreen] = useState(0);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      console.log("screenWidth", screenWidth);
-      if (screenWidth > 1280) {
-        setScreen(1280);
-      } else if (screenWidth > 900) {
-        setScreen(900);
-      } else {
-        setScreen(0);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
       <div className="flex flex-col">
-        <div className="p-5">
-          {screen === 1280 && (
-            <>
-              <div className="grid grid-cols-4 items-center gap-5">
-                <Logo />
-                <ContactNow />
-                <ChatWithSupplier />
-                <SignInJoin />
-              </div>
-            </>
-          )}
-          {screen === 900 && (
-            <>
-              <div className="flex justify-between gap-5">
-                <Logo />
-                <div className="flex grow flex-col gap-5">
+        <div className="mx-auto w-[95%]">
+          <div className="py-6">
+            <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
+              <Logo />
+              <div className="col-span-2 hidden 2xl:flex">
+                <div className="flex flex-col justify-between gap-2">
                   <ContactNow />
-                  <ChatWithSupplier />
+                  <div className="flex">
+                    <ButtonMail />
+                  </div>
                 </div>
-                <SignInJoin />
-              </div>
-            </>
-          )}
-          {screen === 0 && (
-            <>
-              <div className="flex flex-col gap-5">
-                <div className="flex justify-between gap-5">
-                  <Logo />
-                  <SignInJoin />
-                </div>
-                <div className="flex justify-center gap-5">
-                  <ContactNow />
+                <div className="flex flex-col justify-between gap-4">
                   <ChatWithSupplier />
+                  <div className="px-6">
+                    <ButtonChat />
+                  </div>
                 </div>
               </div>
-            </>
-          )}
+              <SignInJoin />
+            </div>
+          </div>
         </div>
-        <Menu />
       </div>
     </>
   );
