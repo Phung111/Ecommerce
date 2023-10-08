@@ -18,20 +18,40 @@ export default function SideBar() {
               </div>
             </div>
             <h2>Product Group</h2>
-            <div className="flex flex-col gap-3">
-              <p className="flex items-center rounded-lg bg-[#F2F2F2] p-2 text-primary">
+            <div className="flex flex-col gap-1">
+              <p className="rounded-lg bg-[#F2F2F2] p-2 text-primary">
                 Perfurm
               </p>
-              <p className="capitalize">Peanut butter</p>
-              <p className="capitalize">Daily Cleaning/ Personal Care</p>
-              <p className="capitalize">Condiment</p>
-              <p className="capitalize">Sauce</p>
-              <p className="capitalize">Chicken Powder/MSG</p>
-              <p className="capitalize">Noodles</p>
-              <p className="capitalize">Vinegar</p>
-              <p className="capitalize">Japanese Series Seasoning</p>
-              <p className="capitalize">Salad Dressing</p>
-              <p className="capitalize">Moon Cake & Cookies</p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Peanut butter
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Daily Cleaning/ Personal Care
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Condiment
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Sauce
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Chicken Powder/MSG
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Noodles
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Vinegar
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Japanese Series Seasoning
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Salad Dressing
+              </p>
+              <p className="cursor-pointer rounded-lg p-2 capitalize hover:bg-[#F2F2F2] hover:text-primary">
+                Moon Cake & Cookies
+              </p>
             </div>
           </div>
         </div>

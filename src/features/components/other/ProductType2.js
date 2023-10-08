@@ -9,7 +9,7 @@ export default function ProductType2({ img, title, price, quantity }) {
   return (
     <>
       <div
-        className="overflow-hidden rounded-lg bg-white p-5"
+        className="cursor-pointer overflow-hidden rounded-lg bg-white p-5"
         onClick={() => handleSetHomes(1)}
       >
         <div className="flex flex-col gap-2">

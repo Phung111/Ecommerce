@@ -44,27 +44,23 @@ export default function TradeCapacity() {
               <div className="flex w-full flex-col gap-3">
                 <p className="w-full">Have Own Export License</p>
                 <div className="grid grid-cols-2 divide-x divide-y divide-[#e7e7e7] border-[#e7e7e7]">
-                  <div className="flex justify-center bg-[#EFF4FB] p-2 ">
+                  <p className="flex bg-[#EFF4FB] p-2 ">
                     Export License Number
-                  </div>
-                  <p className="flex items-center p-2">03658457</p>
-                  <div className="flex justify-center bg-[#EFF4FB] p-2 ">
-                    Export Company Name
-                  </div>
-                  <p className="flex items-center p-2">
+                  </p>
+                  <p className="flex p-2">03658457</p>
+                  <p className="flex bg-[#EFF4FB] p-2 ">Export Company Name</p>
+                  <p className="flex p-2">
                     ZHONGSHAN KWANGNA IMPORT & Export Co., LTD
                   </p>
                 </div>
-                <div className="flex flex-col">
-                  <div className="flex divide-x divide-[#e7e7e7] border border-[#e7e7e7] "></div>
-                  <div className="flex divide-x divide-[#e7e7e7] border border-[#e7e7e7] "></div>
-                </div>
               </div>
             </div>
-            <div className="flex">
-              <p className="w-[200px] shrink-0 text-[#888]">License Photo</p>
-              <div className="rounded-lg border border-[#e7e7e7] px-8 py-1">
-                <img src={certificate} alt="certificate" />
+            <div className="grid grid-cols-[40%_auto]">
+              <p className="text-[#888]">License Photo</p>
+              <div className="flex">
+                <div className="rounded-lg border border-[#e7e7e7] px-8 py-1">
+                  <img src={certificate} alt="certificate" />
+                </div>
               </div>
             </div>
           </div>
