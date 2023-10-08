@@ -19,7 +19,11 @@ export default function Index() {
           <Footer />
         </>
       )}
-      {homes[2] && <Message />}
+      {homes[2] && (
+        <div className="overflow-hidden">
+          <Message />
+        </div>
+      )}
     </>
   );
 }

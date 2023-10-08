@@ -27,11 +27,11 @@ export default function Message() {
 
   return (
     <>
-      <div className="flex h-screen w-screen">
+      <div className="flex">
         <SideBar />
         <div className="w-full">
           <div
-            className="grid w-full divide-x divide-y"
+            className="grid divide-x divide-y"
             style={{
               gridTemplateRows: `${heightFirstRow}px ${heightSecondRow}px`,
               gridTemplateColumns: `${widthFirstColumn}px auto`,
