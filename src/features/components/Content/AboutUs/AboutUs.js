@@ -7,7 +7,7 @@ export default function AboutUs() {
     <>
       <div className="mx-auto max-w-[95%]">
         <div className="py-6">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-[40%_auto]">
+          <div className="flex flex-col gap-6 md:flex-row">
             <SideBar />
             <Content />
           </div>
