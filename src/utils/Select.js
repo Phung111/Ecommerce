@@ -44,14 +44,13 @@ export default function Select({
     <>
       <div
         ref={selectRef}
-        className={`relative flex ${
-          width ? `w-[${width}px]` : `w-full`
-        } cursor-pointer items-center justify-between gap-3 hover:bg-black/20 ${
+        className={`relative flex cursor-pointer items-center justify-between gap-3 hover:bg-black/20 ${
           borderRadius && "rounded-lg"
         } ${border && "border"} ${
           borderColor && `border-${borderColor}`
         } px-${px} py-${py}`}
         onClick={toggleOptions}
+        style={{ width: `${width ? `${width}px` : `100%`}` }}
       >
         <div className="flex items-center gap-3">
           {sortArrow && <FontAwesomeIcon icon="fa-solid fa-sort" />}

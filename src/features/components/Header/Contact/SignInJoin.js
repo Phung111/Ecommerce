@@ -47,7 +47,7 @@ export default function SignInJoin() {
                 <p className="">Messages</p>
               </div>
               <Select
-                width={50}
+                width={150}
                 px={3}
                 py={2}
                 bg={"white"}
