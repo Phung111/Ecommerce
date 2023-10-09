@@ -9,7 +9,7 @@ export default function MenuHeader() {
           <div className="left-0 flex items-center gap-2 lg:absolute">
             <FontAwesomeIcon icon="fa-solid fa-bars" className="text-[20px]" />
             <Select
-              width={50}
+              width={200}
               px={3}
               py={2}
               bg={"white"}
