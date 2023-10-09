@@ -24,7 +24,7 @@ export default function SideBar({ toggleMiddleBar }) {
 
   return (
     <>
-      <div className="w-24 shrink-0 overflow-hidden bg-primary py-6">
+      <div className="w-24 shrink-0 bg-primary py-6">
         <div className="flex h-full flex-col justify-between">
           <div className="flex flex-col items-center gap-12">
             <div className="flex flex-col px-3">

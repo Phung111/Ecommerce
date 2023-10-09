@@ -7,6 +7,7 @@ const initialState = {
     homes: [true, false, false],
     tabs: [true, false, false, false],
     messages: [true, false, false],
+    productDetails: [true, false, false],
   },
 };
 
@@ -36,9 +37,17 @@ const baseData = createSlice({
           : (state.data.messages[i] = false);
       }
     },
+    setProductDetails: (state, action) => {
+      const index = action.payload;
+      for (let i = 0; i < state.data.productDetails.length; i++) {
+        state.data.productDetails[i] = true
+          ? i === index
+          : (state.data.productDetails[i] = false);
+      }
+    },
   },
 });
 
 const { reducer, actions } = baseData;
-export const { setMessages, setHomes, setTabs } = actions;
+export const { setMessages, setHomes, setTabs, setProductDetails } = actions;
 export default reducer;
